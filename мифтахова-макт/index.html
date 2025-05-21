@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мифтахова</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Добавленная кнопка "Войти" -->
+    <button id="openModalBtn" class="open-modal-btn">Войти</button>
+
+    <!-- Модальное окно (изначально скрыто) -->
+    <div class="modal-overlay">
+      <div class="modal">
+        <div class="close-btn">×</div>
+        <div class="modal-header">Вход</div>
+
+        <div class="input-container">
+          <label class="input-label">Телефон</label>
+          <input
+            type="tel"
+            class="input-field"
+            placeholder="+7(XXX)XXX-XX-XX"
+          />
+        </div>
+
+        <button class="login-btn">Вход</button>
+
+        <div class="secondary-options">
+          <button class="reg-btn">Регистрация</button>
+          <a href="#" class="forgot-link">Забыли пароль?</a>
+        </div>
+      </div>
+    </div>
+
+    <button class="com-btn" id="commBtn">Комментарии</button>
+
+    <div id="commentModal" class="modaly">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-header">Комментарии</div>
+
+        <div class="comment">
+          <div class="comment-author">Дмитрий (курьер) 21.01.2021</div>
+          <div class="comment-text">
+            У клиента были гнилые половина помидоров. Он сказал возьмет их. Надо
+            возместить бонусами.
+          </div>
+        </div>
+
+        <div class="comment">
+          <div class="comment-author">Аня (менеджер) 22.02.2021</div>
+          <div class="comment-text">
+            Созвонились с клиентом. Я начислила 50 балов.
+          </div>
+        </div>
+
+        <div class="comment grey">
+          <div class="comment-text">Клиент</div>
+        </div>
+        <button class="go" id="go">Отправить</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
